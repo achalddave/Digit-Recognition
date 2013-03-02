@@ -1,22 +1,22 @@
 all: train-images train-labels test-image test-labels
 
 train-images:
-	curl http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz > train-images.gz
-	gunzip train-images.gz
-	touch train-images
+	curl http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz > data/train-images.gz
+	gunzip data/train-images.gz
+	touch data/train-images
 
 train-labels:
-	curl http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz > train-labels.gz
-	gunzip train-labels.gz
-	touch train-labels
+	curl http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz > data/train-labels.gz
+	gunzip data/train-labels.gz
+	touch data/train-labels
 
 test-image:
-	curl http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz > test-images.gz
-	gunzip test-images.gz
-	touch test-images
+	curl http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz > data/test-images.gz
+	gunzip data/test-images.gz
+	touch data/test-images
 
 test-labels:
-	curl http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz > test-labels.gz
-	gunzip test-labels.gz
-	touch test-labels
+	curl http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz > data/test-labels.gz
+	gunzip data/test-labels.gz
+	touch data/test-labels
 
