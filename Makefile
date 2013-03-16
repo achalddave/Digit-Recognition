@@ -1,4 +1,7 @@
-all: train-images train-labels test-image test-labels
+all: data train-images train-labels test-image test-labels
+
+data:
+	mkdir data
 
 train-images:
 	curl http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz > data/train-images.gz
