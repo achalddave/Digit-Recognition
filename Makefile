@@ -19,4 +19,3 @@ test-labels:
 	curl http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz > data/test-labels.gz
 	gunzip data/test-labels.gz
 	touch data/test-labels
-
