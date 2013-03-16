@@ -47,7 +47,7 @@ def main():
     num_labels = get_bytes_as_int(labels, 4)
 
     # sanity check
-    assert num_labels == num_images:
+    assert num_labels == num_images
 
     # images are 28x28 pixels, we should scale them up for tkinter
     scale = 10
@@ -77,6 +77,8 @@ def main():
         label = tkinter.Label(root, image=photo)
         label.grid()
 
+    print("Press any key to show the next character");
+    show_next_char()
     root.bind("<Key>", lambda event: show_next_char())
     root.mainloop()
     return 0
